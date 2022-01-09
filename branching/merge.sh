@@ -2,14 +2,12 @@
 # display command line options
 
 count=1
-<<<<<<< HEAD
-for param in "$*"; do
-    echo "\$* Parameter #$count = $param"
-    count=$(( $count + 1 ))
-=======
 while [[ -n "$1" ]]; do
     echo "Parameter #$count = $1"
     count=$(( $count + 1 ))
     shift
->>>>>>> git-merge
+=======
+for param in "$*"; do
+    count=$(( $count + 1 ))
+>>>>>>> 8f4b1e8 (git-rebase 1)
 done
